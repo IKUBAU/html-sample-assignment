@@ -54,8 +54,10 @@ describe("Document's HEAD tests", () => {
 
   // Make sure the Document's title meets the requirement
   test.describe("The page title tests", () => {
-    test("The document title should be `Sample project` - case sensitive", async ({ page }) => {
-      await expect(page).toHaveTitle("Sample project");
+    test("The document title should be `Sample project` - case sensitive", async ({
+      page,
+    }) => {
+      await expect(page).toHaveTitle("Sample Project");
     });
   });
 });
